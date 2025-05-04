@@ -1,0 +1,285 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 8px;
+  padding: 0;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 10pt;
+  background-color: #f6f6ef;
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+a:visited {
+  color: #828282;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.upvote {
+  cursor: pointer;
+  color: #828282;
+}
+
+.upvote:hover {
+  color: #000000;
+}
+
+.comment-tree {
+  margin-left: 2em;
+  margin-top: 1em;
+}
+
+.comment {
+  margin-bottom: 1em;
+}
+
+.comment-meta {
+  color: #828282;
+  font-size: 8pt;
+}
+
+.comment-text {
+  font-size: 9pt;
+  margin-top: 0.5em;
+  line-height: 1.4;
+}
+
+.more-link {
+  font-size: 10pt;
+  color: #828282;
+  margin: 1em 0;
+}
+
+.more-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Table-based layout styles */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+td {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 10pt;
+}
+
+/* Typography sizes */
+.text-title {
+  font-size: 10pt;
+}
+
+.text-metadata {
+  font-size: 7pt;
+  color: #828282;
+}
+
+/* Container width constraint */
+.container-hn {
+  width: 85%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Upvote triangle styles */
+.upvote {
+  color: #828282;
+  font-size: 8pt;
+  cursor: pointer;
+  user-select: none;
+  margin-right: 2px;
+  display: inline-block;
+}
+
+/* Domain text styles */
+.domain {
+  font-size: 8pt;
+  color: #828282;
+  margin-left: 1px;
+}
+
+/* Comment styles */
+.comment-text {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 9pt;
+  color: #000000;
+  line-height: 1.4;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+/* Hide link styles */
+.hide-link {
+  color: #828282;
+  font-size: 7pt;
+}
+
+.hide-link:hover {
+  text-decoration: underline;
+}
+
+/* Spacer utilities */
+.spacer-dot {
+  margin: 0 2px;
+  color: #828282;
+}
+
+.spacer-bar {
+  margin: 0 2px;
+  color: #828282;
+}
+
+/* Post title hover style */
+a.post-title:hover {
+  color: #000000 !important;
+}
+
+/* Comment link hover style */
+a.comment-link:hover {
+  color: #828282 !important;
+}
+
+/* Style for the main container to mimic HN's width constraints */
+#root > div > div {
+  width: 85%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Mimic HN table layout spacing (can be tricky without tables) */
+.hn-table-spacing > * {
+  margin-bottom: 1px;
+}
+
+/* Placeholder for upvote arrow */
+.upvote-arrow {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 2px;
+  vertical-align: baseline;
+}
+
+/* Style for the sitebit (domain) */
+.sitebit {
+  font-size: 7pt;
+  color: #828282;
+  margin-left: 1px;
+}
+
+.sitebit a {
+    color: #828282;
+}
+
+.sitebit a:visited {
+    color: #828282;
+}
+
+/* Subtext (metadata line) */
+.subtext {
+    font-size: 7pt;
+    color: #828282;
+}
+
+.subtext a {
+    color: #828282;
+}
+
+.subtext a:visited {
+    color: #828282;
+}
+
+/* Footer styles */
+.hn-footer {
+  border-top: 2px solid #ff6600;
+  padding-top: 6px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 8pt;
+  color: #000000;
+}
+
+.hn-footer a {
+    color: #000000;
+}
+
+.hn-footer a:visited {
+    color: #000000;
+}
+
+.hn-footer form input {
+    border: 1px solid #000000; /* HN search input border */
+    font-size: 9pt;
+    padding: 1px 2px;
+}
+
+/* Styles for Login Page to match the image */
+.login-page-container {
+  padding: 8px;
+  background-color: #f6f6ef;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 10pt;
+  color: #000000;
+}
+
+.login-page-container h2 {
+  font-weight: bold;
+  font-size: 10pt;
+  color: #000000;
+  margin: 0 0 4px 0;
+}
+
+.login-page-container table {
+  border-collapse: collapse;
+}
+
+.login-page-container td {
+  padding: 1px 4px 1px 0;
+  vertical-align: middle;
+  font-size: 10pt;
+  color: #000000;
+}
+
+.login-page-container label {
+  font-size: 10pt;
+  color: #000000;
+}
+
+.login-page-container input[type="text"],
+.login-page-container input[type="password"] {
+  border: 1px solid #000000;
+  padding: 1px;
+  font-size: 10pt;
+  font-family: monospace;
+}
+
+.login-page-container button[type="submit"] {
+  border: 1px solid #000000;
+  background-color: #f6f6ef;
+  padding: 1px 4px;
+  font-size: 10pt;
+  cursor: pointer;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+.login-page-container a {
+  font-size: 10pt;
+  color: #000000;
+}
+
+.login-page-container a:visited {
+  color: #828282;
+}
