@@ -5,7 +5,7 @@ import { HNItem } from '@/types';
 import PostItem from '@/components/PostItem';
 import Header from '@/components/Header'; // Import Header
 
-const POSTS_PER_PAGE = 30; // Jobs page might show all or paginate differently
+// const POSTS_PER_PAGE = 30; // Jobs page might show all or paginate differently
 
 const JobsPage: React.FC = () => {
   const [storyIds, setStoryIds] = useState<number[]>([]);
